@@ -1,17 +1,15 @@
 package com.taohan.online.exam.util;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
+import com.taohan.online.exam.po.CourseInfo;
+import com.taohan.online.exam.po.GradeInfo;
+import com.taohan.online.exam.po.SubjectInfo;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.taohan.online.exam.po.CourseInfo;
-import com.taohan.online.exam.po.GradeInfo;
-import com.taohan.online.exam.po.SubjectInfo;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
   *
@@ -46,9 +44,10 @@ public class SubjectImportUtil {
 	 */
 	public static List<SubjectInfo> parseSubjectExcel(String filePath, Integer courseId, Integer gradeId, Integer division) {
 		List<SubjectInfo> subjects = new LinkedList<SubjectInfo>();
+		XSSFWorkbook workBook;
 		try {
 			//读取工作本
-			XSSFWorkbook workBook = new XSSFWorkbook(filePath);
+			workBook = new XSSFWorkbook(filePath);
 			//读取工作簿
 			XSSFSheet sheet = workBook.getSheet("Sheet1");
 			//总行数
@@ -103,7 +102,6 @@ public class SubjectImportUtil {
 				
 				subjects.add(subject);
 			}
-			
 			workBook.close();
 		} catch (Exception e) {
 			e.printStackTrace();
