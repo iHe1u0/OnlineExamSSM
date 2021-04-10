@@ -20,5 +20,6 @@
     <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="all-jar" level="project" />
     <orderEntry type="library" name="poi-ooxml" level="project" />
+    <orderEntry type="library" name="mysql-connector-java" level="project" />
   </component>
 </module>
