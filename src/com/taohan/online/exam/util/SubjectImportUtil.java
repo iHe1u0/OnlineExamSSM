@@ -102,8 +102,7 @@ public class SubjectImportUtil {
 				
 				subjects.add(subject);
 			}
-			//workBook.close();
-			// TODO: 这个地方，XSSFWorkBook中没有close()方法
+			workBook.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

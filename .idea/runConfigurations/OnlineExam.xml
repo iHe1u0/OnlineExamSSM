@@ -12,7 +12,7 @@
       <TomcatInfo>
         <option name="name" value="Apache Tomcat/8.5.65" />
         <option name="number" value="0" />
-        <option name="path" value="F:\Programs\Tomcat\8.5.65" />
+        <option name="path" value="F:\Tomcat\8.5.65" />
         <option name="version" value="8.5.65.0" />
       </TomcatInfo>
     </option>
