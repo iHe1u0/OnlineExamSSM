@@ -20,13 +20,13 @@ import com.taohan.online.exam.po.ExamChooseInfo;
 @Repository
 public interface ExamChooseInfoMapper {
 
-	public ExamChooseInfo getChooseWithIds(Map<String, Object> map);
+	ExamChooseInfo getChooseWithIds(Map<String, Object> map);
 	
-	public int updateChooseWithIds(ExamChooseInfo examChoose);
+	int updateChooseWithIds(ExamChooseInfo examChoose);
 	
-	public int addChoose(Map<String, Object> map);
+	int addChoose(Map<String, Object> map);
 	
-	public List<ExamChooseInfo> getChooseInfoWithSumScore(Map<String, Object> map);
+	List<ExamChooseInfo> getChooseInfoWithSumScore(Map<String, Object> map);
 	
-	public List<ExamChooseInfo> getChooseInfoWithExamSubject(Map<String, Object> map);
+	List<ExamChooseInfo> getChooseInfoWithExamSubject(Map<String, Object> map);
 }
